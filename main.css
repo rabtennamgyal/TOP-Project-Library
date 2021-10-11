@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html, body {
+  position: relative;
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #f4f2e9;
+}
+
+header {
+  height: 15rem;
+  background: #FFD767;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+header h1 {
+  font-family: Birthstone, monospace, cursive;
+  font-size: 4.5rem;
+  color: #292929;
+}
+
+header .addBook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+}
+
+header .addBook button {
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: cursive, sans-serif;
+  color: #ffffff;
+  height: 4rem;
+  width: 12rem;
+  border: 1px solid #ffffff;
+  outline: none;
+  background: #000000;
+}
+
+header .addBook button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.7s ease-in;
+  transition: 0.7s ease-in;
+}
+
+header .addBook button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.7s ease-in;
+  transition: 0.7s ease-in;
+}
+
+.inputCard {
+  display: none;
+  place-items: center;
+  background: #00000098;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.inputCard form {
+  background: #000000;
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  height: 70%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inputCard form label {
+  margin: 1rem 0;
+  font-size: 3rem;
+  font-family: Birthstone, sans-serif;
+  color: #ffffff;
+}
+
+.inputCard form input {
+  outline: none;
+  font-size: 2.5rem;
+  height: 4rem;
+  width: 60%;
+}
+
+.inputCard form button {
+  margin: 2rem 0;
+  cursor: pointer;
+  font-size: 3rem;
+  font-family: Birthstone, monospace, cursive;
+  color: #292929;
+  height: 4rem;
+  width: 12rem;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+
+.inputCard form button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.7s ease-in;
+  transition: 0.7s ease-in;
+}
+
+.inputCard form button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.7s ease-in;
+  transition: 0.7s ease-in;
+}
+
+main {
+  min-height: 43rem;
+  max-height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  background-image: url("/img/lib.jpg");
+}
+
+main .divStyle {
+  background: #FFD767;
+  border: none;
+  border-radius: 2rem;
+  height: 40rem;
+  width: 30rem;
+  margin: 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .divStyle h1 {
+  width: 90%;
+  font-size: 2rem;
+  font-family: cursive, sans-serif;
+}
+
+main .divStyle span {
+  font-size: 3rem;
+  font-family: BirthStone, monospace;
+}
+
+main .divStyle #btnBox {
+  width: 100%;
+}
+
+main .divStyle #btnBox button {
+  margin: 1rem 3rem;
+  height: 5rem;
+  width: 5rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

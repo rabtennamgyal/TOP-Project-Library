@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='main.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <h1>
+            Library
+        </h1>
+
+        <div class="addBook">
+            <button id='newBook'>
+                New Book
+            </button>
+        </div>
+    </header>
+
+    <div class='inputCard'>
+        <form>
+            <label id='title'>Title: </label>
+            <input id='titleValue' for='title'>
+            <label id='author'>Author: </label>
+            <input id='authorValue' for='author'>
+            <label id='pages'>Pages: </label>
+            <input id='pagesValue' for='pages'>
+            <button class='submit'>
+                Submit
+            </button>
+        </form>
+    </div>
+
+    <main id='mainCard'>
+    </main>
+
+
+    <script src='app.js'></script>
+</body>
+</html>

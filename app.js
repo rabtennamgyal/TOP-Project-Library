@@ -45,8 +45,6 @@ function createCard(title, author, pages) {
         }
     })
     mainCard.appendChild(bookCard)
-    console.log(localStorage)
-    console.log(library)
 }
 
 

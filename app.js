@@ -14,7 +14,6 @@ function displayInputCard() {
 
 let library = localStorage.getItem('Book') ? JSON.parse(localStorage.getItem('Book')) : []
 
-
 function book(title, author, pages) {
     this.title = title
     this.author = author
@@ -22,6 +21,7 @@ function book(title, author, pages) {
 }
 
 let title, author, pages
+
 
 function createCard(title, author, pages) {
     const bookCard = document.createElement('div')
@@ -40,7 +40,18 @@ function createCard(title, author, pages) {
             bookCard.style.background = '#1cf31c'
         }
         if (e.target.classList.contains('delete')) {
-            library.splice(bookCard, 1)
+            for (let i = 0; i < library.length; i++) {
+                if (library.length !== 1) {
+                    library = library.splice(e.target, 1)
+                    localStorage.setItem('Book', JSON.stringify(library))
+                    console.log(library)
+                } else {
+                    localStorage.clear()
+                    console.log(library)
+                    console.log(localStorage)
+                }
+            }
+
             bookCard.parentNode.removeChild(bookCard)
         }
     })
@@ -67,6 +78,9 @@ function addBookToLibrary(e) {
         input1.value = ''
         input2.value = ''
         input3.value = ''
+
+        console.log(localStorage)
+        console.log(library)
     }
 }
 
@@ -76,9 +90,4 @@ library.forEach(el => {
 
 newBookBtn.addEventListener('click', displayInputCard)
 submit.addEventListener('click', addBookToLibrary)
-
-
-
-
-
 

@@ -15,14 +15,16 @@ function displayInputCard() {
 
 let library = localStorage.getItem('Book') ? JSON.parse(localStorage.getItem('Book')) : []
 
-function book(title, author, pages, read) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.read = read
-}
 
 let title, author, pages, read
+class book {
+    constructor(title, author, pages, read) {
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.read = read
+    }
+}
 
 function createCard(title, author, pages, read) {
     const bookCard = document.createElement('div')
@@ -73,6 +75,7 @@ function createCard(title, author, pages, read) {
                     }
                 } else {
                     localStorage.clear()
+                    library = []
                 }
             bookCard.parentNode.removeChild(bookCard)
         }
@@ -88,10 +91,15 @@ function addBookToLibrary(e) {
         title = document.getElementById('titleValue').value
         author = document.getElementById('authorValue').value
         pages = document.getElementById('pagesValue').value
-        if (input4.checked) {
-            read = 'I already read it.'
+        if (input4.checked && input5.checked) {
+            alert('Choose one option')
+            return
         } else {
-            read = 'Didn\'t read it yet.'
+            if (input4.checked) {
+                read = 'I already read it.'
+            } else {
+                read = 'Didn\'t read it yet.'
+            }
         }
 
         let newBook = new book(title, author, pages, read)

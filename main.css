@@ -84,7 +84,7 @@ header .addBook button:active {
   border: none;
   outline: none;
   border-radius: 3rem;
-  height: 70%;
+  height: 90%;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,6 +96,41 @@ header .addBook button:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.inputCard form .question {
+  margin: 1rem 0;
+  height: 20%;
+}
+
+.inputCard form .question .readOrNot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inputCard form .question .readOrNot .content {
+  height: 20%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inputCard form .question .readOrNot .content input {
+  height: 2rem;
 }
 
 .inputCard form label {
@@ -154,7 +189,7 @@ main .divStyle {
   background: #FFD767;
   border: none;
   border-radius: 2rem;
-  height: 40rem;
+  height: 35rem;
   width: 30rem;
   margin: 10px 5px;
   display: -webkit-box;
@@ -173,18 +208,23 @@ main .divStyle {
 }
 
 main .divStyle h1 {
+  margin: 1rem 0;
   width: 90%;
   font-size: 2rem;
   font-family: cursive, sans-serif;
-}
-
-main .divStyle span {
-  font-size: 3rem;
-  font-family: BirthStone, monospace;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 main .divStyle #btnBox {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 main .divStyle #btnBox button {

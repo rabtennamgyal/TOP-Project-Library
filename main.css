@@ -183,7 +183,7 @@ main {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   place-items: center;
-  background-image: url("/img/lib.jpg");
+  background: #c4dff7;
 }
 
 main .divStyle {

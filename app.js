@@ -15,14 +15,16 @@ function displayInputCard() {
 
 let library = localStorage.getItem('Book') ? JSON.parse(localStorage.getItem('Book')) : []
 
-function book(title, author, pages, read) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.read = read
-}
 
 let title, author, pages, read
+class book {
+    constructor(title, author, pages, read) {
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.read = read
+    }
+}
 
 function createCard(title, author, pages, read) {
     const bookCard = document.createElement('div')
